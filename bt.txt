@@ -1,0 +1,92 @@
+#0  0x00007ffff74d5f77 in zval_from_stack_add_frame_variables (opa=0x7ffff4c80500, symbols=<optimised out>, edata=0x7ffff4c14290, frame=0x7ffff4c630b0) at ./build-8.1/src/develop/stack.c:431
+        symbol_name = <optimised out>
+        symbol = {value = {lval = 140737300351328, dval = 6.9533465192032362e-310, counted = 0x7ffff4cb4960, str = 0x7ffff4cb4960, arr = 0x7ffff4cb4960, obj = 0x7ffff4cb4960, res = 0x7ffff4cb4960, ref = 0x7ffff4cb4960, ast = 0x7ffff4cb4960, 
+            zv = 0x7ffff4cb4960, ptr = 0x7ffff4cb4960, ce = 0x7ffff4cb4960, func = 0x7ffff4cb4960, ww = {w1 = 4106963296, w2 = 32767}}, u1 = {type_info = 266, v = {type = 10 '\n', type_flags = 1 '\001', u = {extra = 0}}}, u2 = {next = 0, 
+            cache_slot = 0, opline_num = 0, lineno = 0, num_args = 0, fe_pos = 0, fe_iter_idx = 0, property_guard = 0, constant_flags = 0, extra = 0}}
+        j = 0
+        variables = {value = {lval = 140737300253256, dval = 6.9533465143578356e-310, counted = 0x7ffff4c9ca48, str = 0x7ffff4c9ca48, arr = 0x7ffff4c9ca48, obj = 0x7ffff4c9ca48, res = 0x7ffff4c9ca48, ref = 0x7ffff4c9ca48, ast = 0x7ffff4c9ca48, 
+            zv = 0x7ffff4c9ca48, ptr = 0x7ffff4c9ca48, ce = 0x7ffff4c9ca48, func = 0x7ffff4c9ca48, ww = {w1 = 4106865224, w2 = 32767}}, u1 = {type_info = 775, v = {type = 7 '\a', type_flags = 3 '\003', u = {extra = 0}}}, u2 = {next = 21845, 
+            cache_slot = 21845, opline_num = 21845, lineno = 21845, num_args = 21845, fe_pos = 21845, fe_iter_idx = 21845, property_guard = 21845, constant_flags = 21845, extra = 21845}}
+        j = <optimised out>
+        variables = <optimised out>
+        __arr = <optimised out>
+        __z = <optimised out>
+        symbol_name = <optimised out>
+        symbol = <optimised out>
+#1  zval_from_stack_add_frame (output=0x7ffff74fa478 <xdebug_globals+1048>, fse=0x555555e69540, edata=0x7ffff4c14290, add_local_vars=<optimised out>, params_as_values=<optimised out>) at ./build-8.1/src/develop/stack.c:467
+        frame = <optimised out>
+#2  0x00007ffff74d63eb in zval_from_stack (output=output@entry=0x7ffff74fa478 <xdebug_globals+1048>, add_local_vars=add_local_vars@entry=true, params_as_values=params_as_values@entry=true) at ./build-8.1/src/develop/stack.c:489
+        fse = 0x555555e69540
+        next_fse = 0x555555e69630
+        i = 2
+#3  0x00007ffff74d8137 in xdebug_develop_throw_exception_hook (exception=0x7ffff4c9f960, file=0x7ffff4c9f9b8, line=0x7ffff4c9f9c8, code=<optimised out>, code_str=<optimised out>, message=0x7ffff4c9f988) at ./build-8.1/src/develop/stack.c:1244
+        exception_ce = 0x555555c2c200
+        exception_trace = <optimised out>
+        tmp_str = {l = 2532, a = 2958, 
+          d = 0x555555e6c4e0 "\nException:  in /tmp/chris.smith/tmp.AyZVqWqkc9/test.php on line 9\n\nCall Stack:\n    0.0001     403552   1. {main}() /tmp/chris.smith/tmp.AyZVqWqkc9/test.php:0\n    0.0017     734232   2. Generatedba53b"...}
+        z_previous_exception = <optimised out>
+        z_last_exception_slot = <optimised out>
+        z_previous_trace = <optimised out>
+        previous_exception_obj = <optimised out>
+        dummy = {value = {lval = 93824999408128, dval = 4.6355708928631335e-310, counted = 0x555555c2c200, str = 0x555555c2c200, arr = 0x555555c2c200, obj = 0x555555c2c200, res = 0x555555c2c200, ref = 0x555555c2c200, ast = 0x555555c2c200, 
+            zv = 0x555555c2c200, ptr = 0x555555c2c200, ce = 0x555555c2c200, func = 0x555555c2c200, ww = {w1 = 1438827008, w2 = 21845}}, u1 = {type_info = 4106877280, v = {type = 96 '`', type_flags = 249 '\371', u = {extra = 62665}}}, u2 = {
+            next = 32767, cache_slot = 32767, opline_num = 32767, lineno = 32767, num_args = 32767, fe_pos = 32767, fe_iter_idx = 32767, property_guard = 32767, constant_flags = 32767, extra = 32767}}
+#4  0x00007ffff74b5a47 in xdebug_throw_exception_hook (exception=0x7ffff4c9f960) at ./build-8.1/src/base/base.c:1570
+        code = 0x7ffff4c9f9a8
+        message = 0x7ffff4c9f988
+        file = 0x7ffff4c9f9b8
+        line = 0x7ffff4c9f9c8
+        exception_ce = <optimised out>
+        code_str = 0x0
+        dummy = {value = {lval = 93824999408128, dval = 4.6355708928631335e-310, counted = 0x555555c2c200, str = 0x555555c2c200, arr = 0x555555c2c200, obj = 0x555555c2c200, res = 0x555555c2c200, ref = 0x555555c2c200, ast = 0x555555c2c200, 
+            zv = 0x555555c2c200, ptr = 0x555555c2c200, ce = 0x555555c2c200, func = 0x555555c2c200, ww = {w1 = 1438827008, w2 = 21845}}, u1 = {type_info = 4106306560, v = {type = 0 '\000', type_flags = 68 'D', u = {extra = 62657}}}, u2 = {
+            next = 32767, cache_slot = 32767, opline_num = 32767, lineno = 32767, num_args = 32767, fe_pos = 32767, fe_iter_idx = 32767, property_guard = 32767, constant_flags = 32767, extra = 32767}}
+#5  xdebug_throw_exception_hook (exception=0x7ffff4c9f960) at ./build-8.1/src/base/base.c:1522
+        code = <optimised out>
+        message = <optimised out>
+        file = <optimised out>
+        line = <optimised out>
+        exception_ce = <optimised out>
+        code_str = <optimised out>
+        dummy = <optimised out>
+#6  0x0000555555673064 in zend_throw_exception_internal ()
+No symbol table info available.
+#7  0x000055555566aed4 in ?? ()
+No symbol table info available.
+#8  0x00005555558a35e3 in execute_ex ()
+No symbol table info available.
+#9  0x000055555582e2c4 in zend_call_function ()
+--Type <RET> for more, q to quit, c to continue without paging--c
+No symbol table info available.
+#10 0x000055555582e5ac in _call_user_function_impl ()
+No symbol table info available.
+#11 0x00005555558bbf67 in ?? ()
+No symbol table info available.
+#12 0x00007ffff74b5355 in xdebug_execute_internal (current_execute_data=0x7ffff4c14290, return_value=0x7ffff4c14240) at ./build-8.1/src/base/base.c:1018
+        run_internal_handler = <optimised out>
+#13 0x000055555567103c in ?? ()
+No symbol table info available.
+#14 0x0000555555671a72 in ?? ()
+No symbol table info available.
+#15 0x0000555555670fa7 in ?? ()
+No symbol table info available.
+#16 0x0000555555671a72 in ?? ()
+No symbol table info available.
+#17 0x00005555558acca9 in zend_execute ()
+No symbol table info available.
+#18 0x000055555583cce0 in zend_execute_scripts ()
+No symbol table info available.
+#19 0x00005555557d79ba in php_execute_script ()
+No symbol table info available.
+#20 0x0000555555925e2e in ?? ()
+No symbol table info available.
+#21 0x000055555567c027 in ?? ()
+No symbol table info available.
+#22 0x00007ffff7229d90 in __libc_start_call_main (main=main@entry=0x55555567bc50, argc=argc@entry=4, argv=argv@entry=0x7fffffffdc78) at ../sysdeps/nptl/libc_start_call_main.h:58
+        self = <optimised out>
+        result = <optimised out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {0, 5883599592660918924, 140737488346232, 93824993442896, 93824997203416, 140737354125376, -5883599593584205172, -5883582459015077236}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x7fffffffdc78, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = -9096}}}
+        not_first_call = <optimised out>
+#23 0x00007ffff7229e40 in __libc_start_main_impl (main=0x55555567bc50, argc=4, argv=0x7fffffffdc78, init=<optimised out>, fini=<optimised out>, rtld_fini=<optimised out>, stack_end=0x7fffffffdc68) at ../csu/libc-start.c:392
+No locals.
+#24 0x000055555567d185 in _start ()
